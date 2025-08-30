@@ -10,6 +10,5 @@
     --accent-color: #3f7d20;
     --background-color: #f3eff5;
     --text-color: #0d0a0b;
-    --font-family: verdana, sans-serif;
+    --transition: all 0.3s ease;
 }
-

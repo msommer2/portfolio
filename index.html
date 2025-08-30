@@ -4,10 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Sommers | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-<body>
     
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Matt Sommers</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h2 class="hero-title">Hi, I'm Matt Sommers</h2>
+        <p class="hero-subtitle">Frontend Web Developer</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I am a passionate frontend web developer with experience in HTML, 
+                    CSS, and JavaScript. I love creating beautiful and functional websites 
+                    that provide great user experiences.
+                </p>
+                <p>My skills include:</p>
+                <ul class="skills-list">
+                    <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img
+                    src="/assets/Outdoor Decor1.png" 
+                    alt="Landscape Design Website" 
+                />
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A brief description of Project One.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://outdoordecorlandscape.com/" class="btn btn-secondary" target="_blank">Visit Site</a>
+                </div>    
+            </div>
+
+            <div class="project-card">
+                <img
+                    src="/assets/Outdoor Decor1.png" 
+                    alt="Landscape Design Website" 
+                />
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A brief description of Project One.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://outdoordecorlandscape.com/" class="btn btn-secondary" target="_blank">Visit Site</a>
+                </div>    
+            </div>
+
+            <div class="project-card">
+                <img
+                    src="/assets/Outdoor Decor1.png" 
+                    alt="Landscape Design Website" 
+                />
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A brief description of Project One.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://outdoordecorlandscape.com/" class="btn btn-secondary" target="_blank">Visit Site</a>
+                </div>    
+            </div>            
+        </div>
+    </div>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+            
+<footer>
+    <div class="container">
+        <p>
+            &copy; 2025 Matt Sommers. All rights reserved.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:sommers.matt@gmail.com" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/msommer2/portfolio" class="btn btn-secondary" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
