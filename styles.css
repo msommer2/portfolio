@@ -1,1 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #454955;
+    --secondary-color: #e4f7ca;
+    --accent-color: #3f7d20;
+    --background-color: #f3eff5;
+    --text-color: #0d0a0b;
+    --font-family: verdana, sans-serif;
+}
 
