@@ -220,6 +220,7 @@ section {
 .skills-list li:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
+    cursor: default;
 }
 
 /* Projects Section */
