@@ -29,10 +29,10 @@
     </nav>
 
 <section id="home" class="hero">
-    <div class="container">
-        <h2 class="hero-title">Nice to meet you, I'm Matt</h2>
-        <p class="hero-subtitle">Frontend Web Developer</p>
-        <a href="#projects" class="btn btn-primary">View My Work</a>
+    <div class="hero-content">
+        <h2 class="hero-title">Nice to meet you! I'm Matt,</h2>
+        <p class="hero-subtitle">A Frontend Web Developer</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>        
     </div>
 </section>
 
@@ -125,42 +125,65 @@
         </div>
     </div>
 
-<section id="contact">
+<section id="contact" class="contact">
     <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">
+            I'm currently open to new opportunities and collaborations. 
+            Feel free to reach out to me via email or connect with me on GitHub.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:sommers.matt@gmail.com" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                Email Me
+            </a>
+            <a href="https://github.com/msommer2/portfolio" 
+                class="btn btn-secondary" 
+                target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
 </section>
             
 <footer>
     <div class="container">
         <p>
-            &copy; 2025 Matt Sommers. All rights reserved.
+            &copy; <span id="year"></span> Matt Sommers. All rights reserved. Built with 
+            <span class="heart">❤️</span> and absurd amounts of ☕
         </p>
-        <div class="contact-links">
-            <a href="mailto:sommers.matt@gmail.com" class="btn btn-primary">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/msommer2/portfolio" class="btn btn-secondary" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
     </div>
 </footer>
+
+<button
+    class="floating-contact-btn"
+    id="floatingContactBtn"
+    aria-label="Send Email"
+>
+    <i class="fas fa-envelope"></i>
+</button>
+
+<div class="email-modal" id="emailModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+        <h3>Quick Message</h3>
+        <form id="quickContactForm">
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <script 
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script 
+            type="text/javascript">
+            emailjs.init('ry8DfvJPX7fNprvap')
+        </script>
+    </div>
+</div>
 
 </body>
 </html>
