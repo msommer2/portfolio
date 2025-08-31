@@ -29,7 +29,9 @@ body {
 /* Navigation Styles */
 
 .navbar {
+    background: hsla(74, 100%, 97%, 0.9);
     background-color: var(--background-color);
+    opacity: calc(0.95);
     color: var(--primary-color);
     position: sticky;
     top: 0;
@@ -373,10 +375,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/*body {
     padding-top: 70px;
 }
-
+*/
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
