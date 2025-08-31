@@ -398,6 +398,7 @@ body {
 
 .floating-contact-btn {
     position: fixed;
+    font-size: 1.5rem;
     bottom: 1rem;
     right: 1rem;
     background-color: var(--accent-color);
