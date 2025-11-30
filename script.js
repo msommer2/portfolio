@@ -68,6 +68,13 @@ if (heroTitle) {
     }
 window.addEventListener("load", typeWriter);
 }
+// Main Contact Button to open modal
+const mainContactBtn = document.getElementById("mainContactBtn");
+if (mainContactBtn) {
+    mainContactBtn.addEventListener("click", () => {
+        emailModal.classList.add("active");
+    });
+}
 
 // EmailJS Integration
 emailjs.init("ry8DfvJPX7fNprvap");
@@ -148,4 +155,35 @@ const floatingBtnObserver = new IntersectionObserver(
   }
 );
 
+floatingBtnObserver.observe(contactSection);
+
+// Lightbox Logic
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+function openLightbox(imgElement) {
+    if (lightbox && lightboxImg) {
+        lightbox.style.display = "flex"; // Using flex to center
+        lightbox.style.alignItems = "center";
+        lightbox.style.justifyContent = "center";
+        lightboxImg.src = imgElement.src;
+        // Optional: Disable scrolling when lightbox is open
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeLightbox() {
+    if (lightbox) {
+        lightbox.style.display = "none";
+        // Re-enable scrolling
+        document.body.style.overflow = "auto";
+    }
+}
+
+// Close lightbox when pressing ESC key
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+});
 floatingBtnObserver.observe(contactSection);
