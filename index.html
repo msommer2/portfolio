@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Sommers | Portfolio</title>
+    <title>Matt Sommers | Healthcare Web Development</title>
     <link rel="icon" type="image/png" href="https://github.com/msommer2/portfolio/raw/main/assets/coding%20favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-    
+
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Matt Sommers</h1>
+            <a href="#" class="logo">Matt Sommers <span>| Digital Health Content</span></a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Why Me?</a></li>
+                <li><a href="#projects">Case Studies</a></li>
+                <li><a href="#contact" class="btn btn-primary" style="color: white;">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -29,210 +30,211 @@
         </div>
     </nav>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h2 class="hero-title">Nice to meet you! I'm Matt,</h2>
-        <p class="hero-subtitle">A Frontend Web Developer</p>
-        <a href="#projects" class="btn btn-primary">View My Work</a>        
-    </div>
-</section>
-
-<section id="about" class="about">
-    <div class="about-container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I am a front-end developer who builds clean, intuitive, and 
-                    user-centric web experiences. My approach is uniquely shaped 
-                    by a 15-year career in healthcare as a Doctor of Pharmacy and 
-                    strategic writer. The same precision, empathy, and problem-solving 
-                    skills I used to manage patient care and lead a successful business 
-                    are now applied to writing clean code and designing effective 
-                    digital solutions. This background has given me a deep appreciation 
-                    for the end-user, allowing me to translate complex requirements 
-                    into accessible and engaging interfaces.
-                    <br>
-                    <br>
-                    My passion so far has been partnering with small businesses and 
-                    mission-driven organizations to help them thrive online. I 
-                    specialize in turning a client's vision into a responsive, 
-                    accessible website backed by a thoughtful content strategy. 
-                    For example, I helped a local business achieve a 7x increase in 
-                    search visibility after launching a new site I developed. 
-                    I am dedicated to using my technical skills honed through 
-                    self-study with resources like The Odin Project and DevSlopes 
-                    to build not just websites, but tools that help organizations 
-                    connect with their communities.
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="hero-title">I Turn Clinical Expertise into <span>High-Performing Websites</span>.</h1>
+                <p class="hero-subtitle">
+                    A Pharmacist-turned-Developer building compliant, accessible, and user-centric digital experiences
+                    for private practices and agencies.
                 </p>
-                <br>
-                <br>
-                <p><b>My skills include:</b></p>
-                <ul class="skills-list">
-                    <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
-                    <li><i class="fab fa-js"></i> JavaScript</li>
-                    <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
-                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
+                    <a href="#about" class="btn btn-secondary">About My Background</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/headshot%20transparent%20background.png"
+                    alt="Matt Sommers" class="hero-img-style">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Specialized Services</h2>
+            <p class="section-subtitle">Bridging the gap between medical professionals and modern technology.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-medical"></i>
+                    <h3>Healthcare Web Design</h3>
+                    <p>Custom websites built for clinics and solo practitioners. I focus on patient accessibility, fast
+                        load times, and mobile responsiveness.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-prescription"></i>
+                    <h3>Clinical Content Strategy</h3>
+                    <p>With 12 years of pharmacy experience, I write and edit copy that is clinically accurate,
+                        empathetic, and compliant.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-universal-access"></i>
+                    <h3>Accessibility & Compliance</h3>
+                    <p>Ensuring your digital presence meets WCAG standards, making your services accessible to all
+                        patients regardless of ability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="value-prop">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">The "Hybrid" Advantage</h2>
+                <div class="about-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p>
+                        Most agencies lack clinical literacy. Most clinicians lack technical skills.
+                        <b>I speak both languages.</b>
+                    </p>
+                    <p>
+                        My approach is uniquely shaped by a 15-year career in healthcare, ranging from clinical pharmacy
+                        to management.
+                        I understand the importance of HIPAA, patient privacy, and the delicate tone required for
+                        healthcare marketing.
+                        Now, I apply the same precision I used in patient care to writing clean code and designing
+                        effective digital solutions.
+                    </p>
+                </div>
+
+                <ul class="skills-list" style="margin-top: 3rem; justify-self: center;">
+                    <li><i class="fas fa-user-md"></i> Doctor of Pharmacy</li>
+                    <li><i class="fas fa-code"></i> Frontend Development</li>
+                    <li><i class="fas fa-pen-nib"></i> Medical Writing</li>
+                    <li><i class="fas fa-search-dollar"></i> SEO Strategy</li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="about-img">
-        <img 
-            src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/headshot%20transparent%20background.png" 
-            alt="Matt Sommers Photo" 
-            width="150px" 
-            height="auto">
-    </div>
-</section>
+    </section>
 
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card">
-                <img
-                    src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Outdoor%20Decor1.png" 
-                    alt="Landscape Design Website" 
-                />
-                <div class="project-info">
-                    <h3>Landscape Design Website</h3>
-                    <p>
-                        A website for a local landscaping company, optimized for 
-                        local SEO. Features include a gallery, services overview, 
-                        contact form, and facebook messaging integration. Helped 
-                        improve their online presence (7x search visibility year 
-                        over year) and attract new clients.
-                    </p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Selected Case Studies</h2>
+            <p class="section-subtitle">Real results for real businesses.</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="card-image-wrapper">
+                    <img src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Beacon%20Behavioral%20Health%20Hero.png"
+                        alt="Behavioral Health Project"
+                        onclick="openLightbox(this)"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Clinical Practice</span>
+                        <h3>Behavioral Health Clinic</h3>
+                        <p><b>The Challenge:</b> Creating a welcoming digital front door for sensitive care.</p>
+                        <p><b>The Solution:</b> A calming, accessible design with clear patient pathways.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Accessibility</span>
+                        <span class="tech-tag">Design</span>
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
                 </div>
-                <div class="tech-stack">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Responsive</span>
+
+                <div class="project-card">
+                    <div class="card-image-wrapper">
+                    <img src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Next%20Horizon%20Living1.jpg"
+                        alt="Next Horizon Living"
+                        onclick="openLightbox(this)"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Non-Profit</span>
+                        <h3>Next Horizon Living</h3>
+                        <p><b>The Challenge:</b> Connecting vulnerable populations with housing resources.</p>
+                        <p><b>The Solution:</b> An approachable resource hub with clear calls-to-action.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Non-Profit</span>
+                        <span class="tech-tag">Community</span>
+                    </div>
                 </div>
-                <div class="project-links">
-                    <a href="https://outdoordecorlandscape.com/" class="btn btn-secondary" target="_blank">Visit Site</a>
-                </div>    
+
+                <div class="project-card">
+                    <div class="card-image-wrapper">
+                    <img src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Chiropractor%20hero.jpeg"
+                        alt="Chiropractor Project"
+                        onclick="openLightbox(this)"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Private Practice</span>
+                        <h3>Chiropractor Services</h3>
+                        <p><b>The Challenge:</b> Integrating appointment scheduling with service info.</p>
+                        <p><b>The Solution:</b> A streamlined user flow driving patient bookings.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Booking Integration</span>
+                        <span class="tech-tag">Local SEO</span>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <img
-                    src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Next%20Horizon%20Living1.jpg" 
-                    alt="Stable Housing Website" 
-                />
-                <div class="project-info">
-                    <h3>Stable Housing Website</h3>
-                    <p>
-                        A website for a local non-profit organization that provides
-                        stable housing solutions. Features include housing pages,
-                        contact form, and resources. Helped improve their outreach 
-                        and connect with the community.
-                    </p>
-                </div>
-                <div class="tech-stack">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Responsive</span>
-                </div>
-                <div class="project-links">
-                    <a href="https:nexthorizon.living/" class="btn btn-secondary" target="_blank">Visit Site</a>
-                </div>    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Elevate Your Practice or Agency Services?</h2>
+            <p class="contact-text">
+                Whether you need a new website, a content audit, or help reaching more patients, I'm here to help.
+            </p>
+            <div class="contact-links">
+                <button id="mainContactBtn" class="btn btn-primary"
+                    onclick="document.getElementById('emailModal').classList.add('active')">
+                    <i class="fas fa-paper-plane"></i> Send Me a Message
+                </button>
+                <a href="mailto:sommers.matt@gmail.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Email Directly
+                </a>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <img
-                    src="https://raw.githubusercontent.com/msommer2/portfolio/main/assets/Church%20NPO.png" 
-                    alt="Non-profit Organization Website" 
-                />
-                <div class="project-info">
-                    <h3>Non-Profit Organization Website</h3>
-                    <p>
-                        A website for a non-profit organization benefitting a church
-                        in Haiti. Features include event pages, donation integration, 
-                        multiple language support integration, 
-                        contact form, and community resources. Helped enhance their 
-                        online presence and engage with their congregation.
-                    </p>
-                </div>
-                <div class="tech-stack">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Responsive</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://churchinhaiti.minnesotawebstudio.multisiteadmin.com/a/preview" class="btn btn-secondary" target="_blank">Visit Site</a>
-                </div>    
-            </div>            
+    <footer>
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Matt Sommers. PharmD, Web Developer.
+                <br>
+                Specializing in Digital Health Content.
+            </p>
+        </div>
+    </footer>
+
+    <button class="floating-contact-btn" id="floatingContactBtn" aria-label="Send Email">
+        <i class="fas fa-envelope"></i>
+    </button>
+
+    <div class="email-modal" id="emailModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Send a Message</h3>
+            <form id="quickContactForm">
+                <input type="email" name="email" placeholder="Your Email" required
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <input type="text" name="subject" placeholder="Subject" required
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <textarea name="message" rows="4" placeholder="How can I help your practice?" required
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <script type="text/javascript">emailjs.init('ry8DfvJPX7fNprvap')</script>
         </div>
     </div>
-</section>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-text">
-            I'm currently open to new opportunities and collaborations. 
-            Feel free to reach out to me via email or connect with me on GitHub.
-        </p>
-        <div class="contact-links">
-            <a href="mailto:sommers.matt@gmail.com" class="btn btn-primary">
-                <i class="fas fa-envelope"></i>
-                Email Me
-            </a>
-            <a href="https://github.com/msommer2/portfolio" 
-                class="btn btn-secondary" 
-                target="_blank">
-                <i class="fab fa-github"></i>
-                This Page Was Coded From Scratch, View On GitHub
-            </a>
-</section>
-            
-<footer>
-    <div class="container">
-        <p>
-            &copy; <span id="year"></span> Matt Sommers. All rights reserved. 
-            Custom built with HTML, CSS, and JavaScript using WSL, VSCode & GitHub.
-            <br>
-            <br> 
-            Built with <span class="heart">❤️</span> and absurd amounts of ☕
-        </p>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
     </div>
-</footer>
-
-<button
-    class="floating-contact-btn"
-    id="floatingContactBtn"
-    aria-label="Send Email"
->
-    <i class="fas fa-envelope"></i>
-</button>
-
-<div class="email-modal" id="emailModal">
-    <div class="modal-content">
-        <button class="modal-close" id="modalClose" aria-label="Close">
-            <i class="fas fa-times"></i>
-        </button>
-        <h3>Quick Message</h3>
-        <form id="quickContactForm">
-            <input type="email" name="email" placeholder="Your Email" required />
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-        <script 
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script 
-            type="text/javascript">
-            emailjs.init('ry8DfvJPX7fNprvap')
-        </script>
-    </div>
-</div>
 
 </body>
+
 </html>
